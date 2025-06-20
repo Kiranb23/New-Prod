@@ -14,6 +14,7 @@ app.get('/news', async (req, res) => {
     // Get API key as a access token for authorization
     const url = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
 
+    // try-catch block to check the response
     try {
         const response = await axios.get(url);
         res.json(response.data);
