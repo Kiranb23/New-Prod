@@ -10,7 +10,7 @@ const API_KEY = 'ffa1188e06627f4744c47e4874396e81';
 // Fetch news with optional pagination and search
 app.get('/news', async (req, res) => {
     const { page = 1, query = '', category = '', country = '' } = req.query;
-    const pageSize = 10; // Number of articles per page
+    const pageSize = 10;
     const url = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
 
     try {
