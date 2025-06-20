@@ -3,6 +3,7 @@ const axios = require('axios');
 const cors = require('cors');
 const app = express();
 
+// Use cors to avoid cors error across the browsers
 app.use(cors());
 
 const API_KEY = 'ffa1188e06627f4744c47e4874396e81';
