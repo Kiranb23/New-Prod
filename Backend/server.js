@@ -11,9 +11,10 @@ const API_KEY = 'ffa1188e06627f4744c47e4874396e81';
 app.get('/news', async (req, res) => {
     const { page = 1, query = '', category = '', country = '' } = req.query;
     const pageSize = 10; // Number of articles per page
-    // Get API key as a access token for authorization
-    const url = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
 
+    // Get API key as a access token for authorization
+    //const url = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
+    const url = `https://gnews.io/api/v5/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
     // try-catch block to check the response
     try {
         const response = await axios.get(url);
