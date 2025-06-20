@@ -8,7 +8,7 @@ const NewsCard = ({ article }) => {
             <div className="card-body">
                 <h5 className="card-title">{article.title}</h5>
                 <p className="card-text">{article.description}</p>
-                <a href={article.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Read more</a>
+                <a href={article.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Read More</a>
             </div>
         </div>
     );

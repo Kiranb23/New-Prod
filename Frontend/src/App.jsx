@@ -39,7 +39,7 @@ const App = () => {
                 </select>
                 <select onChange={(e) => setCountry(e.target.value)}>
                     <option value="">All Countries</option>
-                    <option value="us">United States</option>
+                    <option value="us">United States of America</option>
                     <option value="in">India</option>
                     <option value="gb">United Kingdom</option>
                 </select>

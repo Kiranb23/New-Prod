@@ -14,7 +14,7 @@ app.get('/news', async (req, res) => {
     // Get API key as a access token for authorization
     const url = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
 
-    // Try catch block
+    // try-catch block to check the response
     try {
         const response = await axios.get(url);
         res.json(response.data);
@@ -24,4 +24,4 @@ app.get('/news', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on Port ${PORT}`));
