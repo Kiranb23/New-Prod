@@ -3,8 +3,6 @@ const axios = require('axios');
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
-
 const API_KEY = 'ffa1188e06627f4744c47e4874396e81';
 
 // Fetch news with optional pagination and search
