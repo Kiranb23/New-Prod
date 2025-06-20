@@ -6,6 +6,7 @@ const app = express();
 // Use cors to avoid cors error across the browsers
 app.use(cors());
 
+// To be placed in env
 const API_KEY = 'ffa1188e06627f4744c47e4874396e81';
 
 // Fetch news with optional pagination and search
