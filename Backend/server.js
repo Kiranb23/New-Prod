@@ -13,6 +13,7 @@ app.get('/news', async (req, res) => {
     const pageSize = 10; // Number of articles per page
     const url = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&page=${page}&max=${pageSize}&q=${query}&category=${category}&country=${country}`;
 
+    // Try catch block
     try {
         const response = await axios.get(url);
         res.json(response.data);
